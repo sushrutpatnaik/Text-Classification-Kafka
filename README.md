@@ -1,16 +1,20 @@
 # Text-Classification-Kafka
 CS6350.001 Assignment 3 - Big Data Management and Analytics 
 
-you need to extract features and build a classifier over a stream of news
+You need to extract features and build a classifier over a stream of news
 articles. The task is to gather real-time news articles using stream tool
 provided by Guardian API. This part of the code (stream_producer.py) has been
 provided by us for your implementation. To use this API, you will need to sign
-up for API key here: https://open-platform.theguardian.com/access/
+up for API key here: 
+https://open-platform.theguardian.com/access/
+
 Stream_producer.py is the script that generates the Kafka streaming data from
 Guardian API every 1 second. The topic created has been named 'guardian2'. Run
 this from your command prompt window. You should see the news getting printed
-on the screen in the following format: Label index (news category) || headline
-+ bodyText Each news article will have one of the 32 categories, such as
+on the screen in the following format: 
+Label index (news category) || headline + bodyText 
+
+Each news article will have one of the 32 categories, such as
 Australia news, US news, Football, World news, Sport, Television & radio,
 Environment, Science, Media, News, Opinion, Politics, Business, UK news,
 Society, Life and style, Inequality, Art and design, Books, Stage, Film,
